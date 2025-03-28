@@ -4441,6 +4441,7 @@ GameObject:
   - component: {fileID: 1766783644}
   - component: {fileID: 1766783643}
   - component: {fileID: 1766783641}
+  - component: {fileID: 1766783652}
   - component: {fileID: 1766783650}
   - component: {fileID: 1766783649}
   - component: {fileID: 1766783651}
@@ -4563,10 +4564,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 7
   _jumpForce: 14
-  _input: {fileID: 1766783650}
-  _spriteFlipper: {fileID: 1766783649}
-  _groundDetector: {fileID: 202857163}
-  _animatorController: {fileID: 1766783651}
 --- !u!95 &1766783647
 Animator:
   serializedVersion: 5
@@ -4624,6 +4621,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1363e82de6cfbac4a98b166f21f5e6c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerMover: {fileID: 1766783646}
+--- !u!114 &1766783652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766783640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52be64113290f24da5b8d20b3058830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteFlipper: {fileID: 1766783649}
+  _input: {fileID: 1766783650}
+  _playerMover: {fileID: 1766783646}
+  _groundDetector: {fileID: 202857163}
 --- !u!1 &1796125611
 GameObject:
   m_ObjectHideFlags: 0

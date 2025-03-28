@@ -9,7 +9,7 @@ public class EnemyMover : MonoBehaviour
 
     private int _currentWaypointIndex = 0;
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (_waypoints.Length == 0) 
             return;
@@ -23,11 +23,11 @@ public class EnemyMover : MonoBehaviour
             _moveSpeed * Time.deltaTime
         );
 
-        _spriteFlipper.FlipTowardsDirection(direction);
+        _spriteFlipper.FlipTowardsDirection(direction.x);
 
         if (Vector2.Distance(transform.position, target.position) < _waypointThreshold)
         {
-            _currentWaypointIndex = (_currentWaypointIndex + 1) % _waypoints.Length;
+            _currentWaypointIndex = _currentWaypointIndex++ % _waypoints.Length;
         }
     }
 }
