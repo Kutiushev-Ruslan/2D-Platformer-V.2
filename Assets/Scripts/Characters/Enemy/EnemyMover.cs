@@ -8,10 +8,16 @@ public class EnemyMover : MonoBehaviour
     [SerializeField] private SpriteFlipper _spriteFlipper;
 
     private int _currentWaypointIndex = 0;
+    private float _sqrThreshold;
+
+    private void Awake()
+    {
+        _sqrThreshold = _waypointThreshold * _waypointThreshold;
+    }
 
     private void FixedUpdate()
     {
-        if (_waypoints.Length == 0) 
+        if (_waypoints.Length == 0)
             return;
 
         Transform target = _waypoints[_currentWaypointIndex];
@@ -25,9 +31,9 @@ public class EnemyMover : MonoBehaviour
 
         _spriteFlipper.FlipTowardsDirection(direction.x);
 
-        if (Vector2.Distance(transform.position, target.position) < _waypointThreshold)
+        if ((transform.position - target.position).sqrMagnitude < _sqrThreshold)
         {
-            _currentWaypointIndex = _currentWaypointIndex++ % _waypoints.Length;
+            _currentWaypointIndex = ++_currentWaypointIndex % _waypoints.Length;
         }
     }
 }

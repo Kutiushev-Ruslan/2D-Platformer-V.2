@@ -9,7 +9,6 @@ public class PlayerItemCollector : MonoBehaviour
         if (collision.TryGetComponent<Coin>(out _))
         {
             _coinSpawner.CoinCollected(collision.gameObject);
-            Destroy(collision.gameObject);
         }
     }
 }
