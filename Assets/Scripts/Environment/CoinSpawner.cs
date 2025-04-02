@@ -31,12 +31,13 @@ public class CoinSpawner : MonoBehaviour
         }
     }
 
-    public void CoinCollected(GameObject coin)
+    private void OnCoinCollected(Coin coin)
     {
         Transform spawnPoint = coin.transform.parent;
-        Destroy(coin);
-        SpawnCoin();
+        Destroy(coin.gameObject);
         _availableSpawnPoints.Enqueue(spawnPoint);
+
+        SpawnCoin();
     }
 
     private void SpawnCoin()
@@ -50,7 +51,10 @@ public class CoinSpawner : MonoBehaviour
 
     private void SpawnCoinAtPoint(Transform spawnPoint)
     {
-        GameObject coin = Instantiate(_coinPrefab, spawnPoint.position, Quaternion.identity);
-        coin.transform.SetParent(spawnPoint);
+        GameObject coinCopy = Instantiate(_coinPrefab, spawnPoint.position, Quaternion.identity);
+        coinCopy.transform.SetParent(spawnPoint);
+
+        Coin coin = coinCopy.GetComponent<Coin>();
+        coin.OnCollected += OnCoinCollected;
     }
 }
