@@ -31,7 +31,7 @@ public class CoinSpawner : MonoBehaviour
         }
     }
 
-    private void OnCoinCollected(Coin coin)
+    private void CoinCollected(Coin coin)
     {
         Transform spawnPoint = coin.transform.parent;
         Destroy(coin.gameObject);
