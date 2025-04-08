@@ -3,15 +3,15 @@ using System;
 
 public class Coin : MonoBehaviour
 {
-    public event Action<Coin> OnCollected;
+    public event Action<Coin> Collected;
 
     public void Collect()
     {
-        OnCollected?.Invoke(this);
+        Collected?.Invoke(this);
     }
 
     private void OnDestroy()
     {
-        OnCollected = null;
+        Collected = null;
     }
 }

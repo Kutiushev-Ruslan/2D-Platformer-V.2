@@ -5,7 +5,7 @@ public class EnemyMover : MonoBehaviour
     [SerializeField] private float _moveSpeed = 2f;
     [SerializeField] private Transform[] _waypoints;
     [SerializeField] private float _waypointThreshold = 0.1f;
-    [SerializeField] private SpriteFlipper _spriteFlipper;
+    [SerializeField] private Flipper _flipper;
 
     private int _currentWaypointIndex = 0;
     private float _sqrThreshold;
@@ -29,7 +29,7 @@ public class EnemyMover : MonoBehaviour
             _moveSpeed * Time.deltaTime
         );
 
-        _spriteFlipper.FlipTowardsDirection(direction.x);
+        _flipper.FlipTowardsDirection(direction.x);
 
         if ((transform.position - target.position).sqrMagnitude < _sqrThreshold)
         {

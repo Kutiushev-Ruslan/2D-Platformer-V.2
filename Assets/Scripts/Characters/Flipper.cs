@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class SpriteFlipper : MonoBehaviour
+public class Flipper : MonoBehaviour
 {
     private bool _isFacingRight = true;
     private Quaternion _facingRightRotation;

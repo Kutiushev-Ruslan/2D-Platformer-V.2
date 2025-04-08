@@ -7,12 +7,22 @@ public class PlayerMover : MonoBehaviour
     [SerializeField] private float _jumpForce = 14f;
 
     private Rigidbody2D _rigidbody;
+    private PlayerAnimatorController _animatorController;
 
     public float CurrentSpeed => _rigidbody.velocity.x;
 
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        _animatorController = GetComponent<PlayerAnimatorController>();
+    }
+
+    private void Update()
+    {
+        if (_animatorController != null)
+        {
+            _animatorController.SetSpeed(Mathf.Abs(CurrentSpeed));
+        }
     }
 
     public void Jump()

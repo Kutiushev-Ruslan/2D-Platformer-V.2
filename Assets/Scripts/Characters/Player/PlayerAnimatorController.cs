@@ -3,8 +3,6 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class PlayerAnimatorController : MonoBehaviour
 {
-    [SerializeField] private PlayerMover _playerMover;
-
     private Animator _animator;
 
     private void Awake()
@@ -12,16 +10,10 @@ public class PlayerAnimatorController : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    private void Update()
+    public void SetSpeed(float speed)
     {
-        UpdateAnimations();
-    }
-
-    private void UpdateAnimations()
-    {
-        if (_animator != null && _playerMover != null)
+        if (_animator != null)
         {
-            _animator.SetFloat(PlayerAnimatorData.Params.Speed, Mathf.Abs(_playerMover.CurrentSpeed));
+            _animator.SetFloat(PlayerAnimatorData.Params.Speed, speed);
         }
     }
-}

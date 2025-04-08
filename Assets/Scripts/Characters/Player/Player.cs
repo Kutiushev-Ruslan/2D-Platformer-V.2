@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private SpriteFlipper _spriteFlipper;
+    [SerializeField] private Flipper _flipper;
     [SerializeField] private PlayerInput _input;
     [SerializeField] private PlayerMover _playerMover;
     [SerializeField] private GroundDetector _groundDetector;
@@ -17,6 +17,6 @@ public class Player : MonoBehaviour
             _playerMover.Jump();
         }
 
-        _spriteFlipper.FlipTowardsDirection(_input.Direction);
+        _flipper.FlipTowardsDirection(_input.Direction);
     }
 }

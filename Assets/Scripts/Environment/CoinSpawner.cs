@@ -55,6 +55,6 @@ public class CoinSpawner : MonoBehaviour
         coinCopy.transform.SetParent(spawnPoint);
 
         Coin coin = coinCopy.GetComponent<Coin>();
-        coin.OnCollected += OnCoinCollected;
+        coin.Collected += CoinCollected;
     }
 }
