@@ -4216,7 +4216,7 @@ MonoBehaviour:
   - {fileID: 1479776968}
   - {fileID: 601833922}
   _waypointThreshold: 0.1
-  _spriteFlipper: {fileID: 1471074695}
+  _flipper: {fileID: 1471074695}
 --- !u!50 &1471074690
 Rigidbody2D:
   serializedVersion: 4
@@ -4620,7 +4620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1363e82de6cfbac4a98b166f21f5e6c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerMover: {fileID: 1766783646}
 --- !u!114 &1766783652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4633,7 +4632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52be64113290f24da5b8d20b3058830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spriteFlipper: {fileID: 1766783649}
+  _flipper: {fileID: 1766783649}
   _input: {fileID: 1766783650}
   _playerMover: {fileID: 1766783646}
   _groundDetector: {fileID: 202857163}
