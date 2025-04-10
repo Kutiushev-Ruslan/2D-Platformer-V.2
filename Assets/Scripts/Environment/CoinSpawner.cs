@@ -54,6 +54,7 @@ public class CoinSpawner : MonoBehaviour
         GameObject coinCopy = Instantiate(_coinPrefab, spawnPoint.position, Quaternion.identity);
         coinCopy.transform.SetParent(spawnPoint);
 
+
         Coin coin = coinCopy.GetComponent<Coin>();
         coin.Collected += CoinCollected;
     }
