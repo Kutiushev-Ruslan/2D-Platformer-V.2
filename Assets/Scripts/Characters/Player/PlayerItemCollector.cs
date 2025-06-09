@@ -8,5 +8,10 @@ public class PlayerItemCollector : MonoBehaviour
         {
             coin.Collect();
         }
+
+        if (collision.TryGetComponent<MedKit>(out MedKit medKit))
+        {
+            medKit.Collect();
+        }
     }
 }

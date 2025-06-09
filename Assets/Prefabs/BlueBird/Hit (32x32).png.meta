@@ -1,34 +1,22 @@
 fileFormatVersion: 2
-guid: 9f8778d0d44049a459735824f24042e0
+guid: a84745caca919394ea0a3541417402d8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6570920502705930198
-    second: Flying (32x32)_0
+      213: 6868122594974341346
+    second: Hit (32x32)_0
   - first:
-      213: 3944408015643112240
-    second: Flying (32x32)_1
+      213: 7167584040609486739
+    second: Hit (32x32)_1
   - first:
-      213: 3853816143673293235
-    second: Flying (32x32)_2
+      213: -1675461080110260169
+    second: Hit (32x32)_2
   - first:
-      213: -3032164649882222076
-    second: Flying (32x32)_3
+      213: 8480664182131228983
+    second: Hit (32x32)_3
   - first:
-      213: 3545866933577851776
-    second: Flying (32x32)_4
-  - first:
-      213: 3029354677832749505
-    second: Flying (32x32)_5
-  - first:
-      213: 2030330461010847512
-    second: Flying (32x32)_6
-  - first:
-      213: 8186078023339056789
-    second: Flying (32x32)_7
-  - first:
-      213: 5717007125227293428
-    second: Flying (32x32)_8
+      213: -953560442851353963
+    second: Hit (32x32)_4
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -75,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -124,7 +112,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flying (32x32)_0
+      name: Hit (32x32)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -138,14 +126,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 819e07ad30572804281f4abe4818ada0
-      internalID: 6570920502705930198
+      spriteID: 98527caeba086cb468019d7c73b0037e
+      internalID: 6868122594974341346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flying (32x32)_1
+      name: Hit (32x32)_1
       rect:
         serializedVersion: 2
         x: 32
@@ -159,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70de0b47d3635dc44a943363d7bcdcf2
-      internalID: 3944408015643112240
+      spriteID: 0d238cdb1821ea44d81e66551aba64d1
+      internalID: 7167584040609486739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flying (32x32)_2
+      name: Hit (32x32)_2
       rect:
         serializedVersion: 2
         x: 64
@@ -180,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a348a9ada0c4a4c489fb4a4871ccdecd
-      internalID: 3853816143673293235
+      spriteID: e738ab2c46b658444b3c20eacd2f44c7
+      internalID: -1675461080110260169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flying (32x32)_3
+      name: Hit (32x32)_3
       rect:
         serializedVersion: 2
         x: 96
@@ -201,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e320f4d30cd0e8488c843a6e7908664
-      internalID: -3032164649882222076
+      spriteID: e357472d120697e43bfea2b1accbe1b4
+      internalID: 8480664182131228983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flying (32x32)_4
+      name: Hit (32x32)_4
       rect:
         serializedVersion: 2
         x: 128
@@ -222,92 +210,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b196a8cf9945f5c4b801268394ff7288
-      internalID: 3545866933577851776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flying (32x32)_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f5f61d9279b88641874c09d63ff850d
-      internalID: 3029354677832749505
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flying (32x32)_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d17af1115be752642aec2ec5f52e8fb7
-      internalID: 2030330461010847512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flying (32x32)_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 118e75ab61413d048be538594228f0f1
-      internalID: 8186078023339056789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flying (32x32)_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12ef74075278ef944b803d8390b208c4
-      internalID: 5717007125227293428
+      spriteID: 2235d1e801fedd743b6a236d0faf562d
+      internalID: -953560442851353963
       vertices: []
       indices: 
       edges: []
@@ -323,15 +227,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Flying (32x32)_0: 6570920502705930198
-      Flying (32x32)_1: 3944408015643112240
-      Flying (32x32)_2: 3853816143673293235
-      Flying (32x32)_3: -3032164649882222076
-      Flying (32x32)_4: 3545866933577851776
-      Flying (32x32)_5: 3029354677832749505
-      Flying (32x32)_6: 2030330461010847512
-      Flying (32x32)_7: 8186078023339056789
-      Flying (32x32)_8: 5717007125227293428
+      Hit (32x32)_0: 6868122594974341346
+      Hit (32x32)_1: 7167584040609486739
+      Hit (32x32)_2: -1675461080110260169
+      Hit (32x32)_3: 8480664182131228983
+      Hit (32x32)_4: -953560442851353963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
