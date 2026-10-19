@@ -5,11 +5,13 @@ public class PlayerMover : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 5.5f;
     [SerializeField] private float _jumpForce = 14f;
+    [SerializeField] private float _bounceForce = 8f;
 
     private Rigidbody2D _rigidbody;
     private PlayerAnimatorController _animatorController;
 
     public float CurrentSpeed => _rigidbody.velocity.x;
+    public float CurrentVerticalSpeed => _rigidbody.velocity.y;
 
     private void Awake()
     {
@@ -28,6 +30,11 @@ public class PlayerMover : MonoBehaviour
     public void Jump()
     {
         _rigidbody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+    }
+
+    public void Bounce()
+    {
+        _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _bounceForce);
     }
 
     public void Move(float direction)

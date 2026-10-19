@@ -4,15 +4,6 @@ using UnityEngine;
 public class Flipper : MonoBehaviour
 {
     private bool _isFacingRight = true;
-    private Quaternion _facingRightRotation;
-    private Quaternion _facingLeftRotation;
-
-    private void Awake()
-    {
-        _facingRightRotation = transform.rotation;
-
-        _facingLeftRotation = _facingRightRotation * Quaternion.Euler(0, 180, 0);
-    }
 
     public void FlipTowardsDirection(float direction)
     {
@@ -29,6 +20,9 @@ public class Flipper : MonoBehaviour
     private void Flip()
     {
         _isFacingRight = !_isFacingRight;
-        transform.rotation = _isFacingRight ? _facingRightRotation : _facingLeftRotation;
+
+        transform.rotation = Quaternion.Euler(0f, _isFacingRight ? 0f : 180f, 0f);
+
+        //Debug.Log($"Flipped to: {(_isFacingRight ? "right" : "left")}");
     }
 }
