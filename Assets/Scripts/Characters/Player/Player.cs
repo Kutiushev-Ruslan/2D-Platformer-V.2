@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
                 {
                     if (enemy.TryGetComponent<Health>(out var enemyHealth))
                     {
+                        enemy.InterruptAttack();
                         enemyHealth.TakeDamage(_playerDamage);
                         _playerMover.Bounce();
 

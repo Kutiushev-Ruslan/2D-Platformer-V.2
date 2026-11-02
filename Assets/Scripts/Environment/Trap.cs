@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class Trap : MonoBehaviour
 {
-    public event Action<Trap> Hit;
-
     [SerializeField] private int _trapDamage = 10;
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -14,7 +12,6 @@ public class Trap : MonoBehaviour
         if (collision.rigidbody.TryGetComponent<Health>(out var health))
         {
             health.TakeDamage(_trapDamage);
-            Debug.Log("Hit");
         }
     }
 }

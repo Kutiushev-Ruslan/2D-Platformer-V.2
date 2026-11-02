@@ -8,10 +8,10 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Transform[] _coinSpawnPoints;
     [SerializeField] private Transform[] _medKitSpawnPoints;
     [SerializeField] private int _initialCoinCount = 5;
-    [SerializeField] private int _initialMedKitCount = 5;
+    [SerializeField] private int _initialMedKitCount = 2;
 
     private Queue<Transform> _availableCoinSpawnPoints = new Queue<Transform>();
-    private Queue<Transform> _availableMedKitSpawnPoints = new Queue<Transform>();
+    private List<Transform> _availableMedKitSpawnPoints = new List<Transform>();
 
     private void Start()
     {
@@ -28,7 +28,7 @@ public class Spawner : MonoBehaviour
 
         foreach (Transform point in _medKitSpawnPoints)
         {
-            _availableMedKitSpawnPoints.Enqueue(point);
+            _availableMedKitSpawnPoints.Add(point);
         }
     }
 
@@ -58,11 +58,8 @@ public class Spawner : MonoBehaviour
     {
         Transform spawnPoint = medKit.transform.parent;
         Destroy(medKit.gameObject);
-        //_availableMedKitSpawnPoints.Enqueue(spawnPoint);
-
-        //SpawnMedKit();
     }
-    
+
 
     private void SpawnCoin()
     {
@@ -77,8 +74,10 @@ public class Spawner : MonoBehaviour
     {
         if (_availableMedKitSpawnPoints.Count > 0)
         {
-            Transform spawnPoint = _availableMedKitSpawnPoints.Dequeue();
+            int randomIndex = Random.Range(0, _availableMedKitSpawnPoints.Count);
+            Transform spawnPoint = _availableMedKitSpawnPoints[randomIndex];
             SpawnMedKitAtPoint(spawnPoint);
+            _availableMedKitSpawnPoints.RemoveAt(randomIndex);
         }
     }
 

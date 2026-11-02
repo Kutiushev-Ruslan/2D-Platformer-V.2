@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class EnemyAIController : MonoBehaviour
 {
-    [Header("Detection Settings")]
     [SerializeField] private float _viewRadius = 5f;
     [SerializeField] private float _viewAngle = 90f;
     [SerializeField] private Transform _viewPoint;
@@ -31,29 +30,29 @@ public class EnemyAIController : MonoBehaviour
 
     private bool CheckPlayerVisibility()
     {
-        if (_playerTransform == null) return false;
+        if (_playerTransform == null)
+            return false;
 
         Vector2 directionToPlayer = (_playerTransform.position - _viewPoint.position).normalized;
         float distanceToPlayer = Vector2.Distance(_viewPoint.position, _playerTransform.position);
 
-        if (distanceToPlayer > _viewRadius) return false;
+        if (distanceToPlayer > _viewRadius)
+            return false;
 
         float angleToPlayer = Vector2.Angle(_viewPoint.right, directionToPlayer);
 
-        if (angleToPlayer > _viewAngle * 0.5f) return false;
+        if (angleToPlayer > _viewAngle * 0.5f)
+            return false;
 
-        RaycastHit2D hit = Physics2D.Raycast(
-            _viewPoint.position,
-            directionToPlayer,
-            distanceToPlayer,
-            _obstacleMask);
+        RaycastHit2D hit = Physics2D.Raycast(_viewPoint.position, directionToPlayer, distanceToPlayer, _obstacleMask);
 
         return hit.collider == null;
     }
 
     private void OnDrawGizmosSelected()
     {
-        if (_viewPoint == null) return;
+        if (_viewPoint == null)
+            return;
 
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(_viewPoint.position, _viewRadius);

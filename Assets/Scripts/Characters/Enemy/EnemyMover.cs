@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class EnemyMover : MonoBehaviour
 {
-    [Header("Movement Settings")]
     [SerializeField] private float _patrolSpeed = 2f;
     [SerializeField] private float _chaseSpeed = 4f;
     [SerializeField] private Transform[] _waypoints;
@@ -19,7 +18,8 @@ public class EnemyMover : MonoBehaviour
 
     public void ReturnToNearestWaypoint()
     {
-        if (_waypoints.Length == 0) return;
+        if (_waypoints.Length == 0) 
+            return;
 
         float minDistance = float.MaxValue;
         int nearestIndex = 0;
@@ -41,7 +41,8 @@ public class EnemyMover : MonoBehaviour
 
     public void Patrol()
     {
-        if (_waypoints.Length == 0) return;
+        if (_waypoints.Length == 0) 
+            return;
 
         Vector2 direction = (_waypoints[_currentWaypointIndex].position - transform.position).normalized;
         _rigidbody.velocity = new Vector2(direction.x * _patrolSpeed, _rigidbody.velocity.y);
@@ -58,6 +59,10 @@ public class EnemyMover : MonoBehaviour
         Vector2 direction = (targetPosition - transform.position).normalized;
         _rigidbody.velocity = new Vector2(direction.x * _chaseSpeed, _rigidbody.velocity.y);
         _flipper.FlipTowardsDirection(direction.x);
-        // когда дистанция подходящая атаковать
+    }
+
+    public void StopMoving()
+    {
+        _rigidbody.velocity = new Vector2(0f, _rigidbody.velocity.y);
     }
 }

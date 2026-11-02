@@ -152,12 +152,43 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 906585201}
-  - {fileID: 1796125615}
-  - {fileID: 202089500}
   - {fileID: 2145627137}
+  - {fileID: 202089500}
+  - {fileID: 1796125615}
+  - {fileID: 906585201}
   - {fileID: 988062609}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &186432532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 186432533}
+  m_Layer: 0
+  m_Name: MedKitSpawnPoint6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &186432533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186432532}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.91, y: 0.96, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2126993547}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &187125588
 GameObject:
@@ -345,7 +376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8088a50140a49f44c8bdf8e3129516ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trapDamage: 10
+  _trapDamage: 100
 --- !u!1 &202857160
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +595,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.42, y: 1.43, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2126993547}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &447366032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 447366033}
+  m_Layer: 0
+  m_Name: MedKitSpawnPoint5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &447366033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447366032}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.85, y: 3.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3699,7 +3761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8088a50140a49f44c8bdf8e3129516ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trapDamage: 10
+  _trapDamage: 100
 --- !u!1 &988062605
 GameObject:
   m_ObjectHideFlags: 0
@@ -3837,7 +3899,7 @@ Transform:
   m_GameObject: {fileID: 988062605}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.151658, y: -2.0369158, z: 0}
+  m_LocalPosition: {x: -6.22, y: -0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3855,7 +3917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8088a50140a49f44c8bdf8e3129516ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trapDamage: 10
+  _trapDamage: 100
 --- !u!1 &1184605896
 GameObject:
   m_ObjectHideFlags: 0
@@ -3912,7 +3974,7 @@ Transform:
   m_GameObject: {fileID: 1199230185}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.28, y: -2.79, z: 0}
+  m_LocalPosition: {x: -12.97, y: -2.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3944,6 +4006,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1, y: -3.63, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2126993547}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1304334521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1304334522}
+  m_Layer: 0
+  m_Name: MedKitSpawnPoint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1304334522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304334521}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.13, y: -2.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4167,6 +4260,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _chaseDuration: 3
+  _attackRange: 2
+  _attackDamage: 10
+  _attackCooldown: 1
+  _attackPreparationTime: 0.5
 --- !u!114 &1309877701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4192,8 +4289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e90e240a1c7fa6440a5395d3bb24a610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _viewRadius: 4.2
-  _viewAngle: 224.7
+  _viewRadius: 3.89
+  _viewAngle: 275.4
   _viewPoint: {fileID: 834437918}
   _obstacleMask:
     serializedVersion: 2
@@ -4936,15 +5033,15 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.1669636, y: -0.03450632}
+    - - {x: 1.05, y: -0.09}
       - {x: 0.9747143, y: 0.43025684}
-      - {x: -0.035728455, y: 0.75433254}
-      - {x: -0.9215908, y: 0.42123652}
-      - {x: -1.117403, y: -0.10007095}
-      - {x: -1.2254238, y: -0.55021334}
-      - {x: -1.0516758, y: -0.7908945}
-      - {x: 1.2071457, y: -0.7908945}
-      - {x: 1.3085251, y: -0.5224395}
+      - {x: -0.01, y: 0.72}
+      - {x: -0.93, y: 0.45}
+      - {x: -0.91, y: -0.19}
+      - {x: -1.2, y: -0.51}
+      - {x: -0.9, y: -0.78}
+      - {x: 1, y: -0.78}
+      - {x: 1.34, y: -0.55}
   m_UseDelaunayMesh: 0
 --- !u!114 &1471074697
 MonoBehaviour:
@@ -4959,6 +5056,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _chaseDuration: 1
+  _attackRange: 2
+  _attackDamage: 10
+  _attackCooldown: 1
+  _attackPreparationTime: 0.7
 --- !u!114 &1471074698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4985,7 +5086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _viewRadius: 2.24
-  _viewAngle: 260.6
+  _viewAngle: 292.2
   _viewPoint: {fileID: 1871825289}
   _obstacleMask:
     serializedVersion: 2
@@ -5274,7 +5375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 708b110b806347e49af5e191522b0b65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 1000
 --- !u!1 &1796125611
 GameObject:
   m_ObjectHideFlags: 0
@@ -5430,7 +5531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8088a50140a49f44c8bdf8e3129516ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trapDamage: 10
+  _trapDamage: 100
 --- !u!1 &1827939656
 GameObject:
   m_ObjectHideFlags: 0
@@ -5555,6 +5656,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2126993547}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2091250689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2091250690}
+  m_Layer: 0
+  m_Name: MedKitSpawnPoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2091250690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091250689}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.86, y: 5.65, z: -0.05814797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2110649507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2110649508}
+  m_Layer: 0
+  m_Name: MedKitSpawnPoint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2110649508
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110649507}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -16.86, y: -0.11, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2126993547}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2126993545
 GameObject:
   m_ObjectHideFlags: 0
@@ -5600,6 +5763,10 @@ MonoBehaviour:
   _medKitSpawnPoints:
   - {fileID: 1660914978}
   - {fileID: 1199230186}
+  - {fileID: 1304334522}
+  - {fileID: 2110649508}
+  - {fileID: 447366033}
+  - {fileID: 186432533}
   _initialCoinCount: 5
   _initialMedKitCount: 2
 --- !u!4 &2126993547
@@ -5626,7 +5793,11 @@ Transform:
   - {fileID: 2060724205}
   - {fileID: 1184605897}
   - {fileID: 1660914978}
+  - {fileID: 2110649508}
   - {fileID: 1199230186}
+  - {fileID: 1304334522}
+  - {fileID: 447366033}
+  - {fileID: 186432533}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2145627134
@@ -5784,12 +5955,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8088a50140a49f44c8bdf8e3129516ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trapDamage: 10
+  _trapDamage: 100
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1404037207}
+  - {fileID: 2091250690}
   - {fileID: 1326437619}
   - {fileID: 1766783644}
   - {fileID: 519420032}

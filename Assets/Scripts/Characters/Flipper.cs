@@ -22,7 +22,5 @@ public class Flipper : MonoBehaviour
         _isFacingRight = !_isFacingRight;
 
         transform.rotation = Quaternion.Euler(0f, _isFacingRight ? 0f : 180f, 0f);
-
-        //Debug.Log($"Flipped to: {(_isFacingRight ? "right" : "left")}");
     }
 }
